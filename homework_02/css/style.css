@@ -95,8 +95,20 @@ write your code here
     .heading a:visited{
         color: silver;
     }
+    .heading a:visited{
+        color: silver;
+    }
     .heading a:hover{
         font-style: inherit;
+    }
+    .text::after{
+        font-size: 12px;
+        content: "New";
+        color: red;
+        vertical-align: super;
+    }
+    .heading a:not(.text)::after{
+        content: ".";
     }
 
     /* Task № 10 */
