@@ -1,0 +1,104 @@
+body {
+  background: rgba(198, 238, 252, 0.53);
+  color: white; }
+
+#content {
+  margin: 0 auto;
+  background: #3b3b3b;
+  width: 960px;
+  padding: 1px 20px 20px 20px; }
+
+h2 {
+  color: #fccd10; }
+
+h1 {
+  color: #fccd10;
+  text-align: center;
+  text-transform: uppercase; }
+
+a {
+  color: #f5c70f; }
+
+.img-right {
+  border: #fccd10 2px solid;
+  padding: 2px;
+  margin-bottom: 10px;
+  float: right;
+  margin-left: 20px; }
+
+.img-left {
+  border: #fccd10 2px solid;
+  padding: 2px;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 20px; }
+
+.brief {
+  background: #fff178;
+  padding: 20px;
+  width: 95%;
+  float: left;
+  margin: 0 0 30px 0;
+  color: black; }
+
+table {
+  width: 95%;
+  border-collapse: collapse; }
+  table caption {
+    text-align: right;
+    color: black; }
+  table th {
+    background: #94a34e;
+    text-transform: uppercase;
+    padding: 10px 10px 10px 20px;
+    font-style: normal;
+    text-align: left;
+    text-align: -moz-left;
+    text-align: -webkit-left;
+    font-weight: normal;
+    color: black; }
+  table th:nth-child(2) {
+    border-left: whitesmoke 1px solid;
+    border-right: whitesmoke 1px solid; }
+  table td {
+    background: #677d01;
+    padding: 10px 10px 10px 20px;
+    font-style: normal;
+    text-align: left;
+    text-align: -moz-left;
+    text-align: -webkit-left;
+    border-bottom: #94a34e 1px solid; }
+
+form {
+  width: 100%; }
+  form label {
+    color: #fccd10;
+    text-transform: uppercase;
+    display: block; }
+  form input, form textarea {
+    padding: 3px;
+    color: #a5a5a5;
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    width: 100%;
+    border: #94a34e 1px solid; }
+  form textarea {
+    height: 150px; }
+  form .Name {
+    display: inline-block;
+    width: 49%; }
+    form .Name input {
+      width: 100%; }
+  form .Name:nth-child(2) {
+    margin-left: 15px; }
+  form input[type="submit"] {
+    width: 240px;
+    height: 40px;
+    color: #cca60d;
+    font-size: 22px;
+    padding: auto;
+    background: inherit;
+    border: #cca60d 1px solid; }
+
+/*# sourceMappingURL=style2.css.map */

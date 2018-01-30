@@ -1,0 +1,124 @@
+
+body{
+  background: $bodyBackground;
+  color: $bodyColor;
+}
+#content{
+  margin: 0 auto;
+  background: $contentBackground;
+  width: 960px;
+  padding: 1px 20px 20px 20px;
+}
+
+
+h2{
+  color: $headerColor;
+}
+h1{
+  color: $headerColor;
+  text-align: center;
+  text-transform: $textTransform;
+}
+
+a{
+  color: $anchorColor;
+}
+
+@mixin image{
+  border: $borderColor 2px solid;
+  padding: 2px;
+  margin-bottom: 10px;
+}
+.img-right{
+  @include image;
+  float: right;
+  margin-left: 20px;
+}
+.img-left{
+  @include image;
+  float:left;
+  margin-right: 20px;
+}
+
+.brief{
+  background: $briefBackground;
+  padding: 20px;
+  width: $briefWidth;
+  float: left;
+  margin: $margin;
+  color: black;
+}
+
+@mixin tableItem{
+  padding: 10px 10px 10px 20px;
+  font-style: normal;
+  text-align: left;
+  text-align: -moz-left;
+  text-align: -webkit-left;
+}
+table{
+  width: 95%;
+  border-collapse: collapse;
+  caption{
+    text-align: right;
+    color: black;
+  }
+  th{
+    background: $thBackground;
+    text-transform: uppercase;
+    @include tableItem;
+    font-weight: normal;
+    color: black;
+  }
+  th:nth-child(2){
+    border-left: whitesmoke 1px solid;
+    border-right: whitesmoke 1px solid;
+  }
+  td{
+    background: $tdBackground;
+    @include tableItem;
+    border-bottom: $thBackground 1px solid;
+  }
+}
+
+
+form{
+  width: 100%;
+  label{
+    color: $formTittleColor;
+    text-transform: uppercase;
+    display: block;
+  }
+  input, textarea{
+    padding: 3px;
+    color: $formTextColor;
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    width: 100%;
+    border: $borderInputColor 1px solid;
+
+  }
+  textarea{
+    height: 150px;
+  }
+  .Name{
+    display: inline-block;
+    width: 49%;
+    input{
+      width: 100%;
+    }
+  }
+  .Name:nth-child(2){
+    margin-left: 15px;
+  }
+  input[type="submit"]{
+    width:240px;
+    height: 40px;
+    color: $formSubmitColor;
+    font-size: 22px;
+    padding: auto;
+    background: inherit;
+    border: $formSubmitColor 1px solid;
+  }
+}

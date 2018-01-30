@@ -1,0 +1,104 @@
+body {
+  background: #dcbb9a;
+  color: black; }
+
+#content {
+  margin: 0 auto;
+  background: #ffffff;
+  width: 960px;
+  padding: 1px 20px 20px 20px; }
+
+h2 {
+  color: #893c00; }
+
+h1 {
+  color: #893c00;
+  text-align: center;
+  text-transform: none; }
+
+a {
+  color: #3d70a1; }
+
+.img-right {
+  border: #893c00 2px solid;
+  padding: 2px;
+  margin-bottom: 10px;
+  float: right;
+  margin-left: 20px; }
+
+.img-left {
+  border: #893c00 2px solid;
+  padding: 2px;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 20px; }
+
+.brief {
+  background: #fadcba;
+  padding: 20px;
+  width: 40%;
+  float: left;
+  margin: 0 20px 0 0;
+  color: black; }
+
+table {
+  width: 95%;
+  border-collapse: collapse; }
+  table caption {
+    text-align: right;
+    color: black; }
+  table th {
+    background: #e0e0e0;
+    text-transform: uppercase;
+    padding: 10px 10px 10px 20px;
+    font-style: normal;
+    text-align: left;
+    text-align: -moz-left;
+    text-align: -webkit-left;
+    font-weight: normal;
+    color: black; }
+  table th:nth-child(2) {
+    border-left: whitesmoke 1px solid;
+    border-right: whitesmoke 1px solid; }
+  table td {
+    background: #ffffff;
+    padding: 10px 10px 10px 20px;
+    font-style: normal;
+    text-align: left;
+    text-align: -moz-left;
+    text-align: -webkit-left;
+    border-bottom: #e0e0e0 1px solid; }
+
+form {
+  width: 100%; }
+  form label {
+    color: rgba(139, 139, 139, 0.95);
+    text-transform: uppercase;
+    display: block; }
+  form input, form textarea {
+    padding: 3px;
+    color: rgba(139, 139, 139, 0.95);
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    width: 100%;
+    border: #e0e0e0 1px solid; }
+  form textarea {
+    height: 150px; }
+  form .Name {
+    display: inline-block;
+    width: 49%; }
+    form .Name input {
+      width: 100%; }
+  form .Name:nth-child(2) {
+    margin-left: 15px; }
+  form input[type="submit"] {
+    width: 240px;
+    height: 40px;
+    color: #3d70a1;
+    font-size: 22px;
+    padding: auto;
+    background: inherit;
+    border: #3d70a1 1px solid; }
+
+/*# sourceMappingURL=style1.css.map */
