@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif; }
+
+header {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../img/apples.jpg);
+  background-size: auto;
+  background-position: center;
+  color: #E8E8E8;
+  font-size: 0.8rem; }
+  header .topContainer {
+    margin-top: 3%;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    header .topContainer .smallLogo {
+      text-transform: uppercase; }
+  header nav {
+    display: inline-block;
+    margin-right: 5%; }
+    header nav a {
+      color: #E8E8E8;
+      padding: 10px 15px;
+      margin: 0 15px; }
+      header nav a:hover {
+        border-bottom: #B7C8D9 2px solid;
+        transition: 200ms; }
+  header .title {
+    text-align: center; }
+  header .bigLogo {
+    color: #FFF;
+    font-size: 3rem;
+    text-transform: uppercase; }
+    header .bigLogo span {
+      font-size: 6rem; }
+    header .bigLogo sup {
+      font-size: 1rem; }
+  header .readMore {
+    padding: 20px 80px;
+    background: #000;
+    opacity: 0.6;
+    border: #FFF 2px solid;
+    margin-bottom: 6%;
+    color: #F3F3F3; }
+
+.topContent {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  background: #FFF;
+  height: 360px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .topContent .firstText {
+    max-width: 470px;
+    width: 29.375%;
+    font-size: 1.5rem;
+    margin-right: 50px;
+    margin-left: 20px; }
+  .topContent .secondText {
+    max-width: 570px;
+    width: 35.625%;
+    font-size: 1rem;
+    margin-left: 50px; }
+
+section {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  background: #E8E8E8;
+  height: 1350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-top: 150px;
+  margin-bottom: 90px; }
+
+.articlesRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 15px 0;
+  color: #E8E8E8; }
+  .articlesRow b {
+    color: #F3F3F3; }
+  .articlesRow .bigArticle {
+    max-width: 770px;
+    width: 770px;
+    height: 300px;
+    position: relative; }
+  .articlesRow .smallArticle {
+    max-width: 370px;
+    width: 370px;
+    height: 300px;
+    position: relative; }
+  .articlesRow .item1 {
+    background: url("../img/sample.jpg") 100% 100% no-repeat;
+    margin-right: 30px; }
+  .articlesRow .item2 {
+    background: url("../img/sample2.jpg") 100% 100%; }
+  .articlesRow .item3 {
+    background: url("../img/sample2.jpg") 100% 100%;
+    margin-right: 40px; }
+  .articlesRow .item4 {
+    background: url("../img/sample3.jpg") 100% 100%; }
+  .articlesRow .likes {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background: #343638;
+    border: #F3F3F3 2px solid;
+    font-size: 0.9rem; }
+  .articlesRow .date {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font-size: 1.2rem; }
+
+.subscribe {
+  width: 1180px;
+  height: 200px;
+  background: #FFF;
+  color: #000;
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .subscribe input[type="email"] {
+    width: 430px;
+    height: 50px; }
+  .subscribe input[type="submit"] {
+    width: 170px;
+    padding: 5px;
+    height: 55px; }
+
+footer {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  background: #FFF;
+  height: 520px;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+  footer ul {
+    list-style-type: none; }
+
+.textBlocks {
+  display: flex;
+  flex-direction: row; }
+
+.bottomFooter {
+  width: 1180px;
+  display: flex;
+  flex-direction: row;
+  color: #E8E8E8;
+  border-top: #E8E8E8 1px solid;
+  justify-content: space-between; }
+  .bottomFooter nav {
+    display: inline-block;
+    margin-right: 5%; }
+    .bottomFooter nav a {
+      color: #343638;
+      padding: 10px 10px;
+      margin: 0 5px; }
+      .bottomFooter nav a:hover {
+        border-bottom: #B7C8D9 2px solid;
+        transition: 200ms; }
+
+/*# sourceMappingURL=style.css.map */
