@@ -9,9 +9,9 @@ body {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif; }
 
+/* HEADER */
 header {
   max-width: 1600px;
-  width: 100%;
   margin: 0 auto;
   height: 740px;
   display: flex;
@@ -22,7 +22,8 @@ header {
   background-size: auto;
   background-position: center;
   color: #E8E8E8;
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+  /* HEADER logo */ }
   header .topContainer {
     margin-top: 3%;
     width: 75%;
@@ -59,9 +60,9 @@ header {
     margin-bottom: 6%;
     color: #F3F3F3; }
 
+/* Latina top block */
 .topContent {
   max-width: 1600px;
-  width: 100%;
   margin: 0 auto;
   background: #FFF;
   height: 360px;
@@ -71,21 +72,19 @@ header {
   justify-content: center; }
   .topContent .firstText {
     max-width: 470px;
-    width: 29.375%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-right: 50px;
     margin-left: 20px; }
   .topContent .secondText {
     max-width: 570px;
-    width: 35.625%;
-    font-size: 1rem;
+    font-size: 0.85rem;
     margin-left: 50px; }
 
+/* ARTICLES BLOCK */
 section {
   max-width: 1600px;
-  width: 100%;
   margin: 0 auto;
-  background: #E8E8E8;
+  background: #F3F3F3;
   height: 1350px;
   display: flex;
   flex-direction: column;
@@ -106,41 +105,45 @@ section {
   .articlesRow b {
     color: #F3F3F3; }
   .articlesRow .bigArticle {
+    /* Articlss */
     max-width: 770px;
-    width: 770px;
+    width: 100%;
     height: 300px;
     position: relative; }
   .articlesRow .smallArticle {
     max-width: 370px;
-    width: 370px;
+    width: 100%;
     height: 300px;
     position: relative; }
   .articlesRow .item1 {
-    background: url("../img/sample.jpg") 100% 100% no-repeat;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 65%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.6)), url("../img/sample.jpg") 100% 100%;
     margin-right: 30px; }
   .articlesRow .item2 {
-    background: url("../img/sample2.jpg") 100% 100%; }
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 65%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.6)), url("../img/sample2.jpg") 100% 100%; }
   .articlesRow .item3 {
-    background: url("../img/sample2.jpg") 100% 100%;
-    margin-right: 40px; }
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 65%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.6)), url("../img/sample2.jpg") 100% 100%;
+    margin-right: 30px; }
   .articlesRow .item4 {
-    background: url("../img/sample3.jpg") 100% 100%; }
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 65%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.6)), url("../img/sample3.jpg") 100% 100%; }
   .articlesRow .likes {
     position: absolute;
     top: 20px;
     right: 20px;
-    padding: 10px;
+    padding: 8px 12px;
     background: #343638;
     border: #F3F3F3 2px solid;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    opacity: 0.8; }
   .articlesRow .date {
     position: absolute;
     left: 30px;
     bottom: 30px;
     font-size: 1.2rem; }
 
+/* Subscribe form */
 .subscribe {
-  width: 1180px;
+  max-width: 1170px;
+  width: 100%;
   height: 200px;
   background: #FFF;
   color: #000;
@@ -149,44 +152,112 @@ section {
   flex-direction: row;
   justify-content: center;
   align-items: center; }
+  .subscribe p {
+    margin-right: 70px;
+    font-size: 1.5rem; }
   .subscribe input[type="email"] {
-    width: 430px;
-    height: 50px; }
+    box-sizing: border-box;
+    width: 415px;
+    height: 55px;
+    padding-left: 15px;
+    background: #F3F3F3;
+    border: #343638 2px solid;
+    color: #000;
+    font-weight: bold; }
   .subscribe input[type="submit"] {
     width: 170px;
-    padding: 5px;
-    height: 55px; }
+    height: 55px;
+    box-sizing: border-box;
+    border: #343638 2px solid;
+    background: #343638;
+    color: #E8E8E8;
+    font-weight: bold; }
 
+/* FOOTER */
 footer {
   max-width: 1600px;
-  width: 100%;
   margin: 0 auto;
   background: #FFF;
-  height: 520px;
+  height: 500px;
   align-items: center;
   display: flex;
   flex-direction: column; }
-  footer ul {
-    list-style-type: none; }
 
 .textBlocks {
+  /* COLUMNS */
+  max-width: 1170px;
+  margin-top: 140px;
+  margin-bottom: 120px;
   display: flex;
   flex-direction: row; }
+  .textBlocks h4:not(:nth-child(2)) {
+    margin-bottom: 20px; }
+  .textBlocks p {
+    font-size: 0.9rem;
+    color: #A4A4A4; }
+  .textBlocks .block1 {
+    flex: 6;
+    margin-left: 10px; }
+  .textBlocks .block2 {
+    margin-left: 100px;
+    flex: 5; }
+    .textBlocks .block2 h4 {
+      margin-bottom: 15px; }
+    .textBlocks .block2 p {
+      line-height: 1.8rem; }
+  .textBlocks .block3 {
+    flex: 6;
+    margin-left: 120px;
+    margin-right: 100px; }
+    .textBlocks .block3 p {
+      font-size: 0.85rem; }
+    .textBlocks .block3 .time {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #E8E8E8; }
+  .textBlocks .block4 {
+    flex: 8;
+    margin-right: 10px; }
+    .textBlocks .block4 p {
+      font-size: 0.9rem;
+      margin-bottom: 30px; }
+    .textBlocks .block4 input[type="email"] {
+      box-sizing: border-box;
+      width: 63%;
+      height: 50px;
+      padding-left: 10px;
+      background: #F3F3F3;
+      border: #343638 2px solid;
+      color: #000;
+      font-weight: bold; }
+    .textBlocks .block4 input[type="submit"] {
+      width: 34%;
+      height: 50px;
+      box-sizing: border-box;
+      border: #343638 2px solid;
+      background: #343638;
+      color: #E8E8E8;
+      font-weight: bold; }
 
 .bottomFooter {
-  width: 1180px;
+  /* Low footer */
+  padding: 25px 0;
+  max-width: 1180px;
+  font-size: 0.9rem;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  color: #E8E8E8;
-  border-top: #E8E8E8 1px solid;
+  color: #B7C8D9;
+  border-top: #B7C8D9 1px solid;
   justify-content: space-between; }
   .bottomFooter nav {
     display: inline-block;
     margin-right: 5%; }
     .bottomFooter nav a {
+      font-weight: bold;
       color: #343638;
       padding: 10px 10px;
-      margin: 0 5px; }
+      margin: 0px 5px; }
       .bottomFooter nav a:hover {
         border-bottom: #B7C8D9 2px solid;
         transition: 200ms; }
