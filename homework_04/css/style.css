@@ -114,24 +114,24 @@ section {
   .articlesRow .bigArticle {
     /* Articlss */
     max-width: 770px;
-    width: 100%;
+    flex: 7;
     height: 300px;
     position: relative; }
   .articlesRow .smallArticle {
     max-width: 370px;
-    width: 100%;
+    flex: 3;
     height: 300px;
     position: relative; }
   .articlesRow .item1 {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 65%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.6)), url("../img/sample.jpg") 100% 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 65%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.6)), url("../img/sample.jpg") center/cover;
     margin-right: 30px; }
   .articlesRow .item2 {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 65%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.6)), url("../img/sample2.jpg") 100% 100%; }
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 65%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.6)), url("../img/sample2.jpg") center/cover; }
   .articlesRow .item3 {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 65%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.6)), url("../img/sample2.jpg") 100% 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 65%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.6)), url("../img/sample2.jpg") center/cover;
     margin-right: 30px; }
   .articlesRow .item4 {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 65%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.6)), url("../img/sample3.jpg") 100% 100%; }
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 65%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.6)), url("../img/sample3.jpg") center/cover; }
   .articlesRow .likes {
     position: absolute;
     top: 20px;
@@ -171,11 +171,18 @@ section {
   justify-content: center;
   align-items: center; }
   .subscribe p {
-    margin-right: 70px;
-    font-size: 1.5rem; }
+    flex: 1;
+    font-size: 1.5rem;
+    margin-left: 100px;
+  }
+  .subscribe form{
+    flex: 1.5;
+    margin-right: 100px;
+  }
   .subscribe input[type="email"] {
     box-sizing: border-box;
-    width: 415px;
+    max-width: 415px;
+    width: 71%;
     height: 55px;
     padding-left: 15px;
     background: #F3F3F3;
@@ -183,7 +190,8 @@ section {
     color: #000;
     font-weight: bold; }
   .subscribe input[type="submit"] {
-    width: 170px;
+    max-width: 170px;
+    width: 29%;
     height: 55px;
     box-sizing: border-box;
     border: #343638 2px solid;
