@@ -18,23 +18,22 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url(../img/apples.jpg);
+  background: url(../img/apples.jpg) center;
   background-size: auto;
-  background-position: center;
   color: #E8E8E8;
   font-size: 0.8rem;
   /* HEADER logo */ }
   header .topContainer {
-    margin-top: 3%;
-    width: 75%;
+    margin-top: 45px;
+    max-width: 1150px;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
     header .topContainer .smallLogo {
       text-transform: uppercase; }
   header nav {
-    display: inline-block;
-    margin-right: 5%; }
+    display: inline-block; }
     header nav a {
       color: #E8E8E8;
       padding: 10px 15px;
@@ -47,18 +46,26 @@ header {
   header .bigLogo {
     color: #FFF;
     font-size: 3rem;
-    text-transform: uppercase; }
-    header .bigLogo span {
+    text-transform: uppercase;
+    margin-left: 10px; }
+    header .bigLogo span:nth-child(1) {
       font-size: 6rem; }
-    header .bigLogo sup {
-      font-size: 1rem; }
+    header .bigLogo span:nth-child(2) {
+      font-size: 1.4rem;
+      vertical-align: super; }
   header .readMore {
     padding: 20px 80px;
     background: #000;
     opacity: 0.6;
     border: #FFF 2px solid;
-    margin-bottom: 6%;
+    margin-bottom: 100px;
     color: #F3F3F3; }
+    header .readMore:hover {
+      opacity: 0.9;
+      transition: 300ms;
+      padding: 25px 90px;
+      font-size: 1.15rem;
+      margin-bottom: 83px; }
 
 /* Latina top block */
 .topContent {
@@ -134,11 +141,22 @@ section {
     border: #F3F3F3 2px solid;
     font-size: 0.9rem;
     opacity: 0.8; }
+    .articlesRow .likes:hover {
+      opacity: 1;
+      cursor: pointer;
+      transition: 200ms; }
+      .articlesRow .likes:hover span {
+        color: #9bc1ce; }
   .articlesRow .date {
     position: absolute;
     left: 30px;
     bottom: 30px;
     font-size: 1.2rem; }
+    .articlesRow .date a {
+      color: #E8E8E8; }
+    .articlesRow .date:hover {
+      font-size: 1.35rem;
+      transition: 200ms; }
 
 /* Subscribe form */
 .subscribe {
@@ -171,7 +189,8 @@ section {
     border: #343638 2px solid;
     background: #343638;
     color: #E8E8E8;
-    font-weight: bold; }
+    font-weight: bold;
+    cursor: pointer; }
 
 /* FOOTER */
 footer {
@@ -229,7 +248,9 @@ footer {
       background: #F3F3F3;
       border: #343638 2px solid;
       color: #000;
-      font-weight: bold; }
+      font-weight: bold;
+      font-style: italic;
+      font-size: 0.8rem; }
     .textBlocks .block4 input[type="submit"] {
       width: 34%;
       height: 50px;
@@ -237,7 +258,9 @@ footer {
       border: #343638 2px solid;
       background: #343638;
       color: #E8E8E8;
-      font-weight: bold; }
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 0.8rem; }
 
 .bottomFooter {
   /* Low footer */
