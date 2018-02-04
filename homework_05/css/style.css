@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font: 14px/1.2 Arial, Helvetica, sans-serif; }
+
+header {
+  max-width: 960px;
+  width: 100%;
+  padding: 20px 0 15px 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  margin: auto; }
+  header nav {
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 7px; }
+    header nav a {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px; }
+      header nav a:hover {
+        color: #39c2d7;
+        transition: 200ms; }
+
+.banner {
+  max-width: 1320px;
+  width: 100%;
+  margin: auto;
+  height: 420px;
+  background: url("../img/banner.jpg") 100% 100%;
+  padding-top: 70px; }
+  .banner .bannerText {
+    max-width: 960px;
+    width: 100%;
+    margin: auto; }
+    .banner .bannerText p {
+      width: 350px;
+      font-size: 2.5rem;
+      color: #fff;
+      text-align: left; }
+
+.news {
+  min-height: 610px;
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px 0 15px 0; }
+  .news article {
+    width: 31%;
+    background: #cccccc;
+    margin: 1.05%;
+    padding: 12px;
+    align-items: center;
+    color: #333; }
+    .news article:hover {
+      background: #39c2d7;
+      cursor: pointer; }
+    .news article img {
+      width: 100%;
+      height: auto;
+      max-width: 300px; }
+    .news article h3 {
+      margin: 9px 0 7px 0;
+      font-size: 1.1rem; }
+    .news article p {
+      font-size: 0.95rem; }
+
+footer {
+  background: #39c2d7;
+  height: 58px;
+  max-width: 1320px;
+  width: 100%;
+  margin: auto;
+  padding: 20px 0; }
+  footer .footerText {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    margin: auto;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold; }
+  footer nav {
+    margin-right: 20px; }
+    footer nav a {
+      text-decoration: none;
+      color: #fff;
+      margin-right: 15px; }
+      footer nav a:hover {
+        text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */
