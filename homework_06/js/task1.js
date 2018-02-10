@@ -30,11 +30,8 @@ if(incorrectData){
 } else{
     // here we have all our calculations
     p = (a + b + c)/2;
-    if(Number.isInteger(Math.sqrt(p*(p-a)*(p-b)*(p-c)))){
-        square = Math.sqrt(p*(p-a)*(p-b)*(p-c));
-    } else{
-        square = Math.sqrt(p*(p-a)*(p-b)*(p-c)).toFixed(2);
-    }
+    square = Math.sqrt(p*(p-a)*(p-b)*(p-c));
+
     if(a*a + b*b == c*c){
         typeOfTriangle = "right triangle";
     } else if (a==b==c){
@@ -44,5 +41,6 @@ if(incorrectData){
     } else{
         typeOfTriangle = "scalene triangle";
     }
-    console.log(`Type of triangle is ${typeOfTriangle} and square is ${square}`);
+
+    console.log(`Type of triangle is ${typeOfTriangle} and square is ${parseFloat(square.toFixed(2))}`);
 }
