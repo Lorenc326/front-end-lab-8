@@ -17,7 +17,7 @@ Possible prize on current attempt: ${possPrize}$`, '');
 
         randNumb = Math.floor(Math.random()*(maxNumb+1));    // set random number
         numb = Number(prom);
-        if(!isNaN(parseFloat(prom)) && isFinite(prom) && (numb <= maxNumb) && (numb >= 0) && randNumb===numb){     //check input data and coincidence of numbers
+        if(!isNaN(parseFloat(prom)) && Number.isInteger(numb) && (numb <= maxNumb) && (numb >= 0) && randNumb===numb){     //check input data and coincidence of numbers
             maxNumb *= 2;
             prize += possPrize;
             possPrize = startPossPrice * 3;
