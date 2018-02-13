@@ -11,9 +11,6 @@ if(!isNaN(parseFloat(prom)) && isFinite(prom) && (n <= 20) && (n > 0)){
         for(let brick = 0; brick <= 2*row; brick++){
             pyramid += '[~]';
         }
-        for(let space = n - row; space > 1; space--){
-            pyramid += `   `;
-        }
         pyramid += '\n'
     }
     console.log(pyramid);
