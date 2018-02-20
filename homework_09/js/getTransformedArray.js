@@ -1,7 +1,5 @@
 function getTransformedArray(arr, func) {
     let transArr = [];
-    forEach(arr, (element) =>
-        transArr.push(func(element))
-    );
+    forEach(arr, elem => transArr.push(func(elem)) );
     return transArr;
 }

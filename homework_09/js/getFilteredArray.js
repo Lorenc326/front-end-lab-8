@@ -1,6 +1,6 @@
 function getFilteredArray(arr, func) {
     let filtrArr = [];
-    forEach(arr, (elem)=>{
+    forEach(arr, elem=>{
         if(func(elem)){
             filtrArr.push(elem);
         }
