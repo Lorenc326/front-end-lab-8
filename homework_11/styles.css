@@ -1,5 +1,30 @@
 /* Your styles goes here */
 li{
     list-style: none;
+    box-sizing: border-box;
+}
+li:hover{
+    cursor: pointer;
+}
+ul{
+    padding-left: 15px;
+    display: none;
+}
+#root>ul{
+    display: block;
+}
+li div{
+    display: flex;
+    align-items: center;
+}
+
+.material-icons.orange {
+    color: #FB8C00;
+}
+.material-icons.grey {
+    color: #929292;
+}
+.folOpened>ul{
+    display: block;
 }
 
