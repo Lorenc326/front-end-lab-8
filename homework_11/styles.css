@@ -1,4 +1,26 @@
-/* Your styles goes here */
+/*  colors of icons */
+.material-icons.orange {
+    color: #FB8C00;
+}
+.material-icons.grey {
+    color: #929292;
+}
+
+
+/*  UList */
+ul{
+    padding-left: 15px;
+    display: none;
+}
+#root>ul{       /*  First (root) folders  */
+    display: block;
+}
+.folOpened>ul{
+    display: block;
+}
+
+
+/*  List items   */
 li{
     list-style: none;
     box-sizing: border-box;
@@ -6,25 +28,12 @@ li{
 li:hover{
     cursor: pointer;
 }
-ul{
-    padding-left: 15px;
-    display: none;
-}
-#root>ul{
-    display: block;
-}
 li div{
     display: flex;
     align-items: center;
 }
+li div:hover{
+    background: #ebebeb;
+}
 
-.material-icons.orange {
-    color: #FB8C00;
-}
-.material-icons.grey {
-    color: #929292;
-}
-.folOpened>ul{
-    display: block;
-}
 
