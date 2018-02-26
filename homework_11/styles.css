@@ -12,7 +12,8 @@ ul{
     padding-left: 15px;
     display: none;
 }
-#root>ul{       /*  First (root) folders  */
+#root>ul{
+    /*  First (root) folders  */
     display: block;
 }
 .folOpened>ul{
@@ -25,15 +26,17 @@ li{
     list-style: none;
     box-sizing: border-box;
 }
-li:hover{
+li div:hover{
     cursor: pointer;
+    background: #ebebeb;
 }
 li div{
     display: flex;
     align-items: center;
 }
-li div:hover{
-    background: #ebebeb;
+ul>i:hover{
+    /* cursor for "empty folder" */
+    cursor: pointer;
 }
 
 

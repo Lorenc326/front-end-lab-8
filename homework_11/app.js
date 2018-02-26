@@ -5,16 +5,20 @@ function createTree(options){
     for(let i = 0; i < options.length; i++){
         let li = document.createElement('li');
         if(options[i].folder){
-            li.innerHTML = `<div><i class="material-icons orange">folder</i><span> ${options[i].title}</span></div>`;     // create folder
+            // create folder
+            li.innerHTML = `<div><i class="material-icons orange">folder</i><span> ${options[i].title}</span></div>`;
             li.firstChild.classList.add('folder');
             if(options[i].children){
-                let childUl = createTree(options[i].children);  // recurtion
+                // recursion
+                let childUl = createTree(options[i].children);
                 li.appendChild(childUl);
             } else{
+                // create "folder is empty" string
                 li.innerHTML += "<ul><i>Folder is empty</i></ul>";
             }
         } else {
-            li.innerHTML = `<div><i class="material-icons grey">insert_drive_file</i><span> ${options[i].title}</span></div>`;    // create file
+            // create file
+            li.innerHTML = `<div><i class="material-icons grey">insert_drive_file</i><span> ${options[i].title}</span></div>`;
         }
         ul.appendChild(li);
     }
@@ -22,7 +26,8 @@ function createTree(options){
 }
 
 rootNode.onclick = function (event){
-    let target = event.target;  // make onclick function by declaration
+    // make onclick function by declaration
+    let target = event.target;
     while(target !== this){
         if((target.tagName === 'DIV') && target.classList.contains('folder')){
             if(target.firstChild.innerHTML==='folder'){  // change pic of folder
