@@ -26,7 +26,7 @@ function createTree(options){
 }
 
 rootNode.onclick = function (event){
-    // make onclick function by declaration
+    // make onclick function by event-delegation
     let target = event.target;
     while(target !== this){
         if((target.tagName === 'DIV') && target.classList.contains('folder')){
