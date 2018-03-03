@@ -12,6 +12,8 @@ h1 {
 body {
     background: #28272b;
 }
+
+/* Default page */
 .container{
     padding: 25px;
     width: 100%;
@@ -31,16 +33,16 @@ body {
 }
 
 .model{
-    margin-left: 13px;
+    padding-left: 12px;
     color: #c9ccac;
     font-size: 15px;
     text-transform: uppercase;
     font-weight: bold;
+    text-align: left;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     display: block;
-    float: left;
     width: 130px;
 }
 .tank {
@@ -56,5 +58,55 @@ body {
     float: left;
     max-width: 24px;
     height: auto;
+}
+.item{
+    padding-bottom: 10px;
+}
+.item:hover{
+    cursor: pointer;
+    background: #4d4b53;
+}
+
+/* Details page */
+.tank-details{
+    color: #999e82;
+    font-size: 14px;
+    font-weight: bold;
+}
+#backLink {
+    display: block;
+    cursor: pointer;
+}
+.tank-details .heading {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.detailsFlag {
+    margin-right: 5px;
+}
+.detailsTank {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+.tank-details table {
+    text-align: left;
+    border-collapse: collapse;
+    color: #e5e8c4;
+}
+.tank-details th {
+    padding: 8px 20px;
+    width: 225px;
+    border: 1px solid #9da285;
+}
+.tank-details th:nth-child(2n+1) {
+    width: 550px;
+}
+
+.preview, .right-column {
+    float: left;
+    margin-left: 15px;
 }
 
