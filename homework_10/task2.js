@@ -1,30 +1,9 @@
-/**
- * @typedef {Object} CombatHistory
- * @property {wins} number - Number of victories
- * @property {loses} number - Number of defeats
- */
+/*
+ For interviewer: Compare array and string return false, cause objects can be compared only
+ with a link of itself(true). (I misunderstood the question and could not answer it
+ immediately). Don`t hope it`s help, but why not?
+*/
 
-/**
- * @typedef {Object} Stats
- * @property {string} name - The name of fighter
- * @property {number} attack - The amount of attack of fighter
- * @property {number} hp - The total number of health point of fighter
- */
-
-/**
- * @typedef {Object} Fighter
- * @property {function} getName - Return name of the fighter
- * @property {function} fight - Return true if fighter make dmg to enemy, otherwise false
- * @property {function} block - Return true if enemy can block incoming damage, otherwise false (randomly)
- * @property {function} getStats - Retrurn {Stats} of fighter
- * @property {number} getCombatHistory - Return {CombatHistory} of previous fights
- */
-
-/**
- * Pretty print fighter's info
- * @param {Fighter} fighter - The fighter
- * DO NOT MODIFY
- */
 
 function showResult(fighter) {
   console.log('Fighter', fighter.getName());
@@ -37,7 +16,11 @@ function fighter(prop) {
         wins: 0,
         loses: 0
     };
-    let stats = prop;
+    let stats = {
+        name: prop.name;
+        attack: prop.attack;
+        hp: prop.hp;
+    };
 
     return {
         getName: function(){

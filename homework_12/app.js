@@ -1,3 +1,9 @@
+/*
+ For interviewer: Compare array and string return false, cause objects can be compared only
+ with a link of itself(true). (I misunderstood the question and could not then answer it
+ immediately). Don`t hope it`s help, but why not?
+*/
+
 let root = document.getElementById('root');
 
 function defaultPage(root){
@@ -76,5 +82,3 @@ window.onhashchange = function () {
         }
     }
 }
-
-defaultPage(root);
